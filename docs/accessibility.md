@@ -1,52 +1,61 @@
 # Accessibility
 
-Status: **DRAFT** — awaiting artist review.
+Accessibility is not an accommodation added after the artwork is designed. It is part of the communication system of the work.
 
-Accessibility is a first-class design principle for Ìjóyà, not an add-on.
-Per the project directive, information must be expressible through more than
-one modality, and no behavior should rely on vision alone.
+This is the operative principle for Ìjóyà, and it is also the reason the project exists. A work about distributed capacity that could only be understood by one kind of body would contradict itself.
 
-## Available modalities
+## The requirement
 
-Movement, vibration, sound, touch, airflow, pressure, tension, texture,
-light.
+**No single sensory modality should be required to understand the central relationship of the installation.**
 
-Every behavior should use at least two of these, chosen so that a visitor
-missing one sense (e.g. sight or hearing) still experiences the behavior
-fully.
+A visitor who cannot see it should be able to perceive that bodies are connected and that consequence travels between them. So should a visitor who cannot hear it, or cannot touch it, or cannot approach it closely, or experiences it from a seated height.
 
-## Support requirements
+## Modalities in the work
 
-- Captions
-- Transcripts
+These are channels through which the relationship can be perceived. The design target is redundancy — the same relationship legible through more than one of them at once.
+
+- Touch
+- Pressure
+- Vibration
+- Tension
+- Movement
+- Light
+- Sound, where appropriate
+- Distinct silhouettes
+- Multiple viewing heights
+
+## Modalities around the work
+
+- Tactile interpretation
 - Audio description
-- Keyboard accessibility (for any software/interface component)
-- High contrast (for any visual/display component)
-- Plain language (in all documentation and any visitor-facing text)
+- Large-print interpretation
+- Accessible placement relative to pathways and seated sightlines
 
-## Design rules
+## Design consequences
 
-- **No color-only meaning.** If light or color is used, pair it with a
-  second channel (vibration, sound, texture) that carries the same meaning.
-- **No hover-only meaning.** Any interaction that depends on proximity or
-  touch must have a non-hover equivalent.
-- **Reduced motion.** Physical movement should have a gentle default; any
-  software/interface layer must respect reduced-motion preferences.
-- **Safety and accessibility overlap.** Movement must remain safe around
-  children, wheelchair users, cane users, walkers, guide dogs, and service
-  animals — see the Safety section of the project directive. Low force,
-  compliant motion, and safe recovery are accessibility requirements as much
-  as safety ones.
+**Silhouette carries meaning.** Bodies must be distinguishable from one another in outline alone, at distance, without color or detail. Difference between bodies is the content; if the forms read as identical, the work fails.
 
-## Per-behavior checklist
+**Connections must be visible and legible.** Cords, tension lines, joints and supports are not hidden. A visitor should be able to see, or feel, that one body is holding another up.
 
-Every behavior documented in [`behaviors/`](./behaviors/) must state its
-accessibility impact per the project directive's documentation standard.
-Use this checklist when writing that section:
+**Multiple heights.** Interaction points cannot all sit at standing adult height. Cowrie nodes and touch points need to be reachable from a seated position.
 
-- [ ] Which modalities express this behavior's information (list at least two)?
-- [ ] Does anything about this behavior rely on vision alone? If so, what's the alternative channel?
-- [ ] Does anything rely on hover/proximity alone? If so, what's the alternative?
-- [ ] Is there a caption/transcript/audio-description need, and is it met?
-- [ ] Is the motion safe and low-force around the visitor groups listed above?
-- [ ] Does the behavior respect a reduced-motion default?
+**Touch is expected, not permitted.** Design for repeated public contact — durable tactile surfaces, no pinch points, no exposed electronics, safe failure.
+
+**Response must be perceptible without explanation.** If a visitor has to read a wall label to know that their touch changed something elsewhere, the interdependence exists in the text rather than in the work. This is the failure mode the design test guards against.
+
+## What this is not
+
+Ìjóyà is not a disability simulation. It does not ask visitors to pretend to be disabled, and it does not stage impairment for an abled audience to learn from.
+
+It is also not a medicalized work about disability or a story of heroic overcoming.
+
+The bodies have capacities and absences. Those differences are the conditions that make relationship necessary — not defects to be corrected, and not a lesson to be delivered.
+
+## In this repository
+
+The repo practices what the work argues:
+
+- Every image has alt text.
+- Every video has a caption and a text description.
+- Documentation is plain Markdown, readable with a screen reader, structured with real headings.
+- No meaning is carried by color alone.
